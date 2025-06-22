@@ -6,7 +6,7 @@ import createToken from "../utils/createToken.js";
 const createUser = asyncHandler(async (req, res) => {
   const { username, email, password } = req.body;
   if (!username || !email || !password) {
-    throw new Error("Please fill all the inputs");
+    throw new Error("Please fill All the Inputs");
   }
 
   const userExists = await User.findOne({ email });
