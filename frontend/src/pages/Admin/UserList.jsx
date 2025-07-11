@@ -9,6 +9,7 @@ import {
   useUpdateUserMutation,
 } from "../../redux/api/usersApiSlice";
 import Message from "../../components/message";
+import AdminMenu from "./AdminMenu";
 const UserList = () => {
   const { data: users, refetch, isLoading, error } = useGetUsersQuery();
 
@@ -58,6 +59,7 @@ const UserList = () => {
       <h1 className="text-2xl font-semibold text-white mb-4 pl-[10rem]">
         Users
       </h1>
+      <AdminMenu></AdminMenu>
       {isLoading ? (
         <Loader />
       ) : error ? (

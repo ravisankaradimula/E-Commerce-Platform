@@ -1,5 +1,5 @@
 import asyncHandler from "../middlewares/asyncHandler.js";
-import Product from "../models/productModel.js";
+import Product from "../models/ProductModel.js";
 
 const addProduct = asyncHandler(async (req, res) => {
   try {
