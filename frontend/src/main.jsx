@@ -12,7 +12,7 @@ import PrivateRoute from "./components/PrivateRoute.jsx";
 //Auth
 import Login from "./pages/Auth/Login.jsx";
 import Register from "./pages/Auth/Register.jsx";
-
+import Home from "./Home.jsx";
 import Profile from "./pages/User/Profile.jsx";
 import AdminRoute from "./pages/Admin/AdminRoute.jsx";
 import UserList from "./pages/Admin/UserList.jsx";
@@ -25,6 +25,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />}></Route>
+      <Route path="/" element={<Home />}></Route>
       <Route path="" element={<PrivateRoute />}>
         <Route path="/profile" element={<Profile></Profile>}></Route>
       </Route>
